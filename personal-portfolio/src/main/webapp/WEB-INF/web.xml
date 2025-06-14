@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+  <!-- Portfolio servlets mapping -->
+  <servlet>
+  <servlet-name>ProjectServlet</servlet-name>
+  <servlet-class>com.example.servlet.ProjectServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ProjectServlet</servlet-name>
+  <url-pattern>/api/projects</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>ContactServlet</servlet-name>
+  <servlet-class>com.example.servlet.ContactServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ContactServlet</servlet-name>
+  <url-pattern>/api/contacts</url-pattern>
+  <url-pattern>/api/contact</url-pattern>
+</servlet-mapping>
+
+</web-app>
